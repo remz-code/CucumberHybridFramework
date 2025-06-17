@@ -19,7 +19,7 @@ public class Myhooks
 	  {
 		 Configreader configreader=new Configreader();
 		  Properties prop=configreader.intializeProperties();
-		  System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+		  System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
 	      //WebDriver driver =  new ChromeDriver();
 		 
 		  driver=Driverfactory.InitializeBrowser(prop.getProperty("browserName"));
